@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Meet Our Team</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex justify-between mx-3">
+            <div class="flex space-x-7">
+              <div>
+                <!-- Website Logo -->
+                <a
+                  href="../pages/index.html"
+                  class="flex items-center py-4 px-2"
+                >
+                  <img
+                    src="../assets/img/logo-ALTA@2x.png"
+                    alt="Logo"
+                    class="w-28 mr-2"
+                  />
+                  >
+                </a>
+              </div>
+            </div>
+            <!-- Navbar items -->
+            <div class="hidden md:flex items-center space-x-3">
+              <a
+                href="../pages/index.html"
+                class="py-4 px-2 text-[#19345E] font-bold hover:text-[#F47522] transition duration-300"
+                >Home</a
+              >
+              <a
+                href="../pages/index.html#about"
+                class="py-4 px-2 text-[#19345E] font-bold hover:text-[#F47522] transition duration-300"
+                >About</a
+              >
+              <a
+                href="../pages/team.html"
+                class="py-4 px-2 text-[#F47522] font-bold"
+                >Team</a
+              >
+              <a
+                href="../pages/blog.html"
+                class="py-4 px-2 text-[#19345E] font-bold hover:text-[#F47522] transition duration-300"
+                >Blog</a
+              >
+              <a href="../pages/contact.html">
+                <button
+                  type="button"
+                  class="mx-6 border border-[#F47522] rounded-full px-9 py-2 text-[#F47522] font-bold hover:bg-[#F47522] hover:text-white"
+                >
+                  Contact
+                </button>
+              </a>
+            </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+              <button class="outline-none mobile-menu-button">
+                <svg
+                  class="w-8 h-8 text-[#F47522]"
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+          <ul class="px-4">
+            <li class="active">
+              <a
+                href="../pages/index.html"
+                class="block text-sm px-2 py-4 text-[#19345E] font-bold transition duration-300 hover:bg-[#F47522] hover:text-white"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/index.html#about"
+                class="block text-sm px-2 py-4 text-[#19345E] font-bold transition duration-300 hover:bg-[#F47522] hover:text-white"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/team.html"
+                class="block text-sm px-2 py-4 text-[#F47522] font-bold hover:bg-[#F47522] hover:text-white"
+                >Team</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/blog.html"
+                class="block text-sm px-2 py-4 text-[#19345E] font-bold transition duration-300 hover:bg-[#F47522] hover:text-white"
+                >Blog</a
+              >
+            </li>
+            <li class="text-center">
+              <a href="../pages/contact.html">
+                <button
+                  type="button"
+                  class="mt-2 mb-3 border border-[#F47522] rounded-full px-9 py-2 text-[#F47522] font-bold hover:bg-[#F47522] hover:text-white"
+                >
+                  Contact
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <script>
+          const btn = document.querySelector("button.mobile-menu-button");
+          const menu = document.querySelector(".mobile-menu");
+
+          btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        </script>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container-responsive mb-12">
+        <div class="text-[#19345E] font-bold text-center mt-20">
+          <!-- background bintang -->
+          <div
+            class="w-[87px] h-32 top-[88px] left-0 bg-center absolute bg-[url('../assets/img/ornament_batik.png')] bg-cover md:w-[99px] md:h-36 lg:w-[200px] lg:h-[292px]"
+          ></div>
+          <!-- judul pages -->
+          <h1
+            class="font-mulish flex justify-center items-center text-4xl md:text-7xl lg:text-[45px] relative"
+          >
+            <div
+              class="lg:border-t-2 lg:border-[#F47522] lg:w-9 mr-[14px]"
+            ></div>
+            About Our Team
+            <div
+              class="lg:border-t-2 lg:border-[#F47522] lg:w-9 ml-[14px]"
+            ></div>
+          </h1>
+        </div>
+        <!-- firts content -->
+        <div
+          class="md:flex md:flex-col md:mt-16 md:mx-9 lg:mx-0 lg:mt-20 border-b-2 border-dotted border-[#AAAAAA] pb-16"
+        >
+          <div class="md:flex md:flex-row">
+            <!-- content left -->
+            <div class="mt-16 md:mt-0 md:ml-10">
+              <div
+                class="w-[265px] lg:w-[365px] mx-auto my-10 drop-shadow-lg relative md:my-0 lg:ml-14"
+              >
+                <!-- name profesi -->
+                <h1
+                  class="text-[#19345E] font-mulish text-2xl mb-8 font-bold text-center md:text-left lg:text-3xl"
+                >
+                  Backend Developer
+                </h1>
+                <!-- gambar orang-->
+                <img
+                  class="w-64 h-[19rem] drop-shadow-lg lg:w-80 lg:h-auto"
+                  src=" ../assets/img/shutterstock_796346011@2x.png"
+                  alt=""
+                />
+                <!-- border orange -->
+                <div
+                  class="w-64 h-[19rem] border-8 border-[#F47522] absolute top-[92px] right-8 lg:w-80 lg:h-[384px] lg:right-[75px]"
+                ></div>
+              </div>
+            </div>
+            <!-- content right -->
+            <div
+              class="mt-20 mx-auto h-72 md:ml-10 md:h-72 lg:w-[440px] lg:h-[320px]"
+            >
+              <!-- kotak biodata -->
+              <div
+                class="text-lg text-[#19345E] font-poppins font-normal md:font-medium"
+              >
+                <!-- firt name -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Firt Name</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>Cindy</p>
+                  </div>
+                </div>
+                <!-- last name -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Last Name</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>Felita</p>
+                  </div>
+                </div>
+                <!-- birthdate -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Birthdate</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>30 Juni 1995</p>
+                  </div>
+                </div>
+                <!-- nationality -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Nationality</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>Indonesia</p>
+                  </div>
+                </div>
+                <!-- Address -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Address</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>Malang</p>
+                  </div>
+                </div>
+                <!-- Email -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Email</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>cindy@altera.id</p>
+                  </div>
+                </div>
+                <!-- Phone -->
+                <div class="flex">
+                  <div class="w-32">
+                    <p>Phone</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>085755444555</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Education & Experience Section -->
+          <section
+            class="flex flex-col md:flex-row text-[#19345E] my-3 md:mt-12 md:justify-between lg:justify-around md:p-5"
+          >
+            <div class="flex flex-col">
+              <h2 class="font-bold text-2xl">Education</h2>
+              <ul class="list-disc font-poppins font-normal py-4 px-6">
+                <li class="text-lg">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2007 - 2010</h3>
+                  <h3 class="font-bold my-2">Istanbul University</h3>
+                  <h3>Engineering Degree</h3>
+                </li>
+                <li class="text-lg my-3">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2005 - 2007</h3>
+                  <h3 class="font-bold my-2">Paris University</h3>
+                  <h3>Masters Degree</h3>
+                </li>
+                <li class="text-lg">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2001 - 2005</h3>
+                  <h3 class="font-bold my-2">Moscow High School</h3>
+                  <h3>Bachelor Degree</h3>
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-col my-4 md:my-0">
+              <h2 class="font-bold text-2xl">Experience</h2>
+              <ul class="list-disc font-poppins font-normal py-4 px-6">
+                <li class="text-lg">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2018 - 2020</h3>
+                  <h3 class="font-bold my-2">Alterra Group</h3>
+                  <h3>Backend Developer</h3>
+                </li>
+                <li class="text-lg my-3">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2015 - 2018</h3>
+                  <h3 class="font-bold my-2">Traveloka</h3>
+                  <h3>Frontend Developer</h3>
+                </li>
+                <li class="text-lg">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2012 - 2015</h3>
+                  <h3 class="font-bold my-2">Bukalapak</h3>
+                  <h3>Quality Engineer</h3>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <!-- second content -->
+        <div
+          class="md:flex md:flex-col md:mt-16 md:mx-9 lg:mx-0 lg:mt-20 border-b-2 border-dotted border-[#AAAAAA] pb-16"
+        >
+          <div class="md:flex md:flex-row">
+            <!-- content left -->
+            <div class="mt-16 md:mt-0 md:ml-10">
+              <div
+                class="w-[265px] lg:w-[365px] mx-auto my-10 drop-shadow-lg relative md:my-0 lg:ml-14"
+              >
+                <!-- name profesi -->
+                <h1
+                  class="text-[#19345E] font-mulish text-2xl mb-8 font-bold text-center md:text-left lg:text-3xl"
+                >
+                  Frontend Developer
+                </h1>
+                <!-- gambar -->
+                <img
+                  class="w-64 h-[19rem] drop-shadow-lg lg:w-80 lg:h-auto"
+                  src=" ../assets/img/shutterstock_796346011@2x.png"
+                  alt=""
+                />
+                <!-- border orange -->
+                <div
+                  class="w-64 h-[19rem] border-8 border-[#19345E] absolute top-[92px] right-8 lg:w-80 lg:h-[384px] lg:right-[75px]"
+                ></div>
+              </div>
+            </div>
+            <!-- content right -->
+            <div
+              class="mt-20 mx-auto h-72 md:ml-10 md:h-72 lg:w-[440px] lg:h-[320px]"
+            >
+              <!-- kotak biodata -->
+              <div
+                class="text-lg text-[#19345E] font-poppins font-normal md:font-medium"
+              >
+                <!-- firt name -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Firt Name</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>Winda</p>
+                  </div>
+                </div>
+                <!-- last name -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Last Name</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>Premestia</p>
+                  </div>
+                </div>
+                <!-- birthdate -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Birthdate</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>30 Juni 1995</p>
+                  </div>
+                </div>
+                <!-- nationality -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Nationality</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>Indonesia</p>
+                  </div>
+                </div>
+                <!-- Address -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Address</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>Malang</p>
+                  </div>
+                </div>
+                <!-- Email -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Email</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>winda@altera.id</p>
+                  </div>
+                </div>
+                <!-- Phone -->
+                <div class="flex">
+                  <div class="w-32">
+                    <p>Phone</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>085755444555</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Education & Experience Section -->
+          <section
+            class="flex flex-col md:flex-row text-[#19345E] my-3 md:mt-12 md:justify-between lg:justify-around md:p-5"
+          >
+            <div class="flex flex-col">
+              <h2 class="font-bold text-2xl">Education</h2>
+              <ul class="list-disc font-poppins font-normal py-4 px-6">
+                <li class="text-lg">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2007 - 2010</h3>
+                  <h3 class="font-bold my-2">Istanbul University</h3>
+                  <h3>Engineering Degree</h3>
+                </li>
+                <li class="text-lg my-3">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2005 - 2007</h3>
+                  <h3 class="font-bold my-2">Paris University</h3>
+                  <h3>Masters Degree</h3>
+                </li>
+                <li class="text-lg">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2001 - 2005</h3>
+                  <h3 class="font-bold my-2">Moscow High School</h3>
+                  <h3>Bachelor Degree</h3>
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-col my-4 md:my-0">
+              <h2 class="font-bold text-2xl">Experience</h2>
+              <ul class="list-disc font-poppins font-normal py-4 px-6">
+                <li class="text-lg">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2018 - 2020</h3>
+                  <h3 class="font-bold my-2">Alterra Group</h3>
+                  <h3>Frontend Developer</h3>
+                </li>
+                <li class="text-lg my-3">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2015 - 2018</h3>
+                  <h3 class="font-bold my-2">Pegi Pegi</h3>
+                  <h3>Frontend Developer</h3>
+                </li>
+                <li class="text-lg">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2012 - 2015</h3>
+                  <h3 class="font-bold my-2">OLX</h3>
+                  <h3>WEB Designer</h3>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <!-- third content -->
+        <div
+          class="md:flex md:flex-col md:mt-16 md:mx-9 lg:mx-0 lg:mt-20 pb-16"
+        >
+          <div class="md:flex md:flex-row">
+            <!-- content left -->
+            <div class="mt-16 md:mt-0 md:ml-10">
+              <div
+                class="w-[265px] lg:w-[365px] mx-auto my-10 drop-shadow-lg relative md:my-0 lg:ml-14"
+              >
+                <!-- name profesi -->
+                <h1
+                  class="text-[#19345E] font-mulish text-2xl mb-8 font-bold text-center md:text-left lg:text-3xl"
+                >
+                  UI UX Designer
+                </h1>
+                <!-- gambar orang -->
+                <img
+                  class="w-64 h-[19rem] drop-shadow-lg lg:w-80 lg:h-auto"
+                  src=" ../assets/img/shutterstock_796346011@2x.png"
+                  alt=""
+                />
+                <!-- border orange -->
+                <div
+                  class="w-64 h-[19rem] border-8 border-[#F47522] absolute top-[92px] right-8 lg:w-80 lg:h-[384px] lg:right-[75px]"
+                ></div>
+              </div>
+            </div>
+            <!-- content right -->
+            <div
+              class="mt-20 mx-auto h-72 md:ml-10 md:h-72 lg:w-[440px] lg:h-[320px]"
+            >
+              <!-- kotak biodata -->
+              <div
+                class="text-lg text-[#19345E] font-poppins font-normal md:font-medium"
+              >
+                <!-- firt name -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Firt Name</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>Aulia</p>
+                  </div>
+                </div>
+                <!-- last name -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Last Name</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>Rahmani</p>
+                  </div>
+                </div>
+                <!-- birthdate -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Birthdate</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>30 Juni 1995</p>
+                  </div>
+                </div>
+                <!-- nationality -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Nationality</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>Indonesia</p>
+                  </div>
+                </div>
+                <!-- Address -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Address</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>Malang</p>
+                  </div>
+                </div>
+                <!-- Email -->
+                <div class="flex mb-3">
+                  <div class="w-32">
+                    <p>Email</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>auli@altera.id</p>
+                  </div>
+                </div>
+                <!-- Phone -->
+                <div class="flex">
+                  <div class="w-32">
+                    <p>Phone</p>
+                  </div>
+                  <div class="w-12">
+                    <p>:</p>
+                  </div>
+                  <div class="">
+                    <p>085755444555</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Education & Experience Section -->
+          <section
+            class="flex flex-col md:flex-row text-[#19345E] my-3 md:mt-12 md:justify-between lg:justify-around md:p-5"
+          >
+            <div class="flex flex-col">
+              <h2 class="font-bold text-2xl">Education</h2>
+              <ul class="list-disc font-poppins font-normal py-4 px-6">
+                <li class="text-lg">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2007 - 2010</h3>
+                  <h3 class="font-bold my-2">Istanbul University</h3>
+                  <h3>Engineering Degree</h3>
+                </li>
+                <li class="text-lg my-3">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2005 - 2007</h3>
+                  <h3 class="font-bold my-2">Paris University</h3>
+                  <h3>Masters Degree</h3>
+                </li>
+                <li class="text-lg">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2001 - 2005</h3>
+                  <h3 class="font-bold my-2">Moscow High School</h3>
+                  <h3>Bachelor Degree</h3>
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-col my-4 md:my-0">
+              <h2 class="font-bold text-2xl">Experience</h2>
+              <ul class="list-disc font-poppins font-normal py-4 px-6">
+                <li class="text-lg">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2018 - 2020</h3>
+                  <h3 class="font-bold my-2">Alterra Group</h3>
+                  <h3>UI UX Designer</h3>
+                </li>
+                <li class="text-lg my-3">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2015 - 2018</h3>
+                  <h3 class="font-bold my-2">Twitter</h3>
+                  <h3>UX Designer</h3>
+                </li>
+                <li class="text-lg">
+                  <img
+                    src="../assets/img/calendar.png"
+                    alt="calendar"
+                    class="inline w-5 mr-2"
+                  />
+                  <h3 class="inline">2012 - 2015</h3>
+                  <h3 class="font-bold my-2">Google</h3>
+                  <h3>Designer</h3>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="bg-[#19345E]">
+      <div class="footer-responsive container-responsive">
+        <!-- logo website -->
+        <div class="logo-alta">
+          <img src="../assets/img/logo-ALTA-v2@2x.png" alt="" />
+        </div>
+        <div class="">
+          <h5 class="sosmed-text">Social Media</h5>
+          <!-- logo icon sosmed -->
+          <div class="icon-sosmed">
+            <img class="icon" src="../assets/img/ic_fb.png" alt="" />
+            <img class="icon" src="../assets/img/ic_twitter.png" alt="" />
+            <img class="icon" src="../assets/img/ic_ig.png" alt="" />
+            <img class="icon" src="../assets/img/ic_linkedin.png" alt="" />
+          </div>
+        </div>
+        <!-- copyright -->
+        <div class="copyright">
+          <h1>Copyright © 2019 Alterra</h1>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Alterra Academy</title>
+</head>
+
+<body>
+  <header>
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between mx-3">
+          <div class="flex space-x-7">
+            <div>
+              <!-- Website Logo -->
+              <a href="../pages/index.html" class="flex items-center py-4 px-2">
+                <img src="../assets/img/logo-ALTA@2x.png" alt="Logo" class="w-28 mr-2" />
+              </a>
+            </div>
+          </div>
+          <!-- Navbar items -->
+          <div class="hidden md:flex items-center space-x-3">
+            <a href="../pages/index.html" class="py-4 px-2 text-[#F47522] font-bold">Home</a>
+            <a href="#about"
+              class="py-4 px-2 text-[#19345E] font-bold hover:text-[#F47522] transition duration-300">About</a>
+            <a href="../pages/team.html"
+              class="py-4 px-2 text-[#19345E] font-bold hover:text-[#F47522] transition duration-300">Team</a>
+            <a href="../pages/blog.html"
+              class="py-4 px-2 text-[#19345E] font-bold hover:text-[#F47522] transition duration-300">Blog</a>
+            <a href="../pages/contact.html">
+              <button type="button"
+                class="mx-6 border border-[#F47522] rounded-full px-9 py-2 text-[#F47522] font-bold hover:bg-[#F47522] hover:text-white">
+                Contact
+              </button>
+            </a>
+          </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg class="w-8 h-8 text-[#F47522]" x-show="!showMenu" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="hidden mobile-menu">
+        <ul class="px-4">
+          <li class="active">
+            <a href="../pages/index.html"
+              class="block text-sm px-2 py-4 text-[#F47522] font-bold hover:bg-[#F47522] hover:text-white">Home</a>
+          </li>
+          <li>
+            <a href="#about"
+              class="block text-sm px-2 py-4 text-[#19345E] font-bold transition duration-300 hover:bg-[#F47522] hover:text-white">About</a>
+          </li>
+          <li>
+            <a href="../pages/team.html"
+              class="block text-sm px-2 py-4 text-[#19345E] font-bold transition duration-300 hover:bg-[#F47522] hover:text-white">Team</a>
+          </li>
+          <li>
+            <a href="../pages/blog.html"
+              class="block text-sm px-2 py-4 text-[#19345E] font-bold transition duration-300 hover:bg-[#F47522] hover:text-white">Blog</a>
+          </li>
+          <li class="text-center">
+            <a href="../pages/contact.html">
+              <button type="button"
+                class="mt-2 mb-3 border border-[#F47522] rounded-full px-9 py-2 text-[#F47522] font-bold hover:bg-[#F47522] hover:text-white">
+                Contact
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="h-screen bg-[#EDF6FF] flex flex-col p-10 md:p-16 lg:p-52 lg:flex-row items-center justify-center">
+      <div>
+        <img src="../assets/img/Group 16136@2x@2x.png" alt="group-photo" class="w-60 md:w-4/6 lg:w-11/12 mx-auto" />
+      </div>
+      <div class="text-[#19345E] font-bold text-center lg:text-left m-7">
+        <h2 class="uppercase text-xl md:text-2xl font-black">Hi There !</h2>
+        <h1 class="font-roboto text-3xl md:text-4xl lg:text-5xl my-3">
+          We are an <span class="text-[#F47522]">Alterra Academy.</span>
+        </h1>
+        <p class="text-base md:text-lg">
+          Alterra Academy Full-stack Program is Coding Bootcamp which
+          transform you being professional Software Engineer within 3 months.
+        </p>
+        <a href="../pages/team.html"><button
+            class="my-5 inline-flex border border-[#F47522] rounded-full px-9 py-2 text-white bg-[#F47522] font-bold items-center">
+            <img src="../assets/img/sport-team.png" alt="icon-sport" class="mx-2 inline-block w-5 md:w-7" />
+            <span class="inline text-xs md:text-sm font-bold">More About Team</span>
+          </button></a>
+      </div>
+    </section>
+
+    <!-- Top 3 Section -->
+    <section class="bg-white flex items-center justify-center text-[#19345E]">
+      <!-- For Mobile -->
+      <div class="block md:hidden my-8 flex-col">
+        <div class="flex items-center">
+          <img src="../assets/img/reward.png" alt="reward" class="bg-[#F47522] rounded-full w-10 p-2 mx-2" />
+          <h2 class="font-roboto font-bold text-sm">
+            4 Years Job
+            <br />
+            <span class="font-mulish font-normal text-xs">Experience</span>
+          </h2>
+        </div>
+        <div class="flex items-center my-6">
+          <img src="../assets/img/project.png" alt="project" class="bg-[#F47522] rounded-full w-10 p-2 mx-2" />
+          <h2 class="font-roboto font-bold text-sm">
+            500+ Projects
+            <br />
+            <span class="font-mulish font-normal text-xs">Completed</span>
+          </h2>
+        </div>
+        <div class="flex items-center">
+          <img src="../assets/img/support.png" alt="support" class="bg-[#F47522] rounded-full w-10 p-2 mx-2" />
+          <h2 class="font-roboto font-bold text-sm">
+            Support
+            <br />
+            <span class="font-mulish font-normal text-xs">Online 24/7</span>
+          </h2>
+        </div>
+      </div>
+      <!-- For >= Tablet -->
+      <div
+        class="hidden md:block flex-row lg:mx-8 lg:mb-8 py-8 w-screen lg:w-2/3 border md:rounded-full shadow-md shadow-[#00000029] text-center">
+        <div class="inline-flex items-center px-6 lg:px-12 text-left">
+          <img src="../assets/img/reward.png" alt="reward" class="bg-[#F47522] rounded-full w-10 p-2 mx-2" />
+          <h2 class="font-roboto font-bold text-base">
+            4 Years Job
+            <br />
+            <span class="font-mulish font-normal text-sm">Experience</span>
+          </h2>
+        </div>
+        <div class="inline-flex items-center px-6 lg:px-14 text-left border-x border-[#AAAAAA]">
+          <img src="../assets/img/project.png" alt="project" class="bg-[#F47522] rounded-full w-10 p-2 mx-2" />
+          <h2 class="font-roboto font-bold text-base">
+            500+ Projects
+            <br />
+            <span class="font-mulish font-normal text-sm">Completed</span>
+          </h2>
+        </div>
+        <div class="inline-flex items-center px-6 lg:px-12 text-left">
+          <img src="../assets/img/support.png" alt="support" class="bg-[#F47522] rounded-full w-10 p-2 mx-2" />
+          <h2 class="font-roboto font-bold text-base">
+            Support
+            <br />
+            <span class="font-mulish font-normal text-sm">Online 24/7</span>
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="bg-white flex flex-col justify-center items-center my-6">
+        <div class="tema mb-6 lg:mb-16">
+          <h1 class="judul mx-3">
+            <div class="garis"></div>
+            About
+            <div class="garis2"></div>
+          </h1>
+        </div>
+      <div
+        class="w-full bg-[url('../assets/img/bg-people@2x.png')] bg-cover bg-center bg-no-repeat relative border border-[#707070]">
+        <div class="bg-[#19345E] opacity-70 absolute w-full h-full"></div>
+        <div class="flex flex-col items-center p-8 md:p-20 lg:p-40 text-center relative">
+          <h2 class="font-bold text-3xl lg:text-6xl my-2">
+            Alterra is For Everyone
+          </h2>
+          <p class="font-bold text-sm lg:text-lg my-2 lg:px-32">
+            As a brandnew Catalyst, we are aiming to become one of the best
+            tech companies in Indonesia. Joining the tech industry in
+            Indonesia since 2015 under the name of Sepulsa, we have evolved as
+            a B2B tech company in 4 years providing various services such as
+            Bill Payment Aggregator, Distribution Network, Promotion Platform,
+            and Tech Academy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet Our Team -->
+    <div class="meet-our-team">
+      <div class="container-responsive">
+        <div class="tema">
+          <div class="gambar"></div>
+          <h1 class="judul">
+            <div class="garis"></div>
+            Meet Our Team
+            <div class="garis2"></div>
+          </h1>
+          <h5 class="sub-judul">
+            Our Team Consists Only of the Best Talents
+          </h5>
+        </div>
+        <div class="card-item">
+          <div class="card down">
+            <img class="image" src=" ../assets/img/shutterstock_796346011@2x.png" alt="" />
+            <div class="kotak orange-border"></div>
+            <h5 class="name">Winda Pramesti</h5>
+            <h6 class="position-name">Frontend Development</h6>
+          </div>
+          <div class="card">
+            <img class="image" src=" ../assets/img/shutterstock_796346011@2x.png" alt="" />
+            <div class="kotak blue-border"></div>
+            <h5 class="name">Cindy Felita</h5>
+            <h6 class="position-name">Backend Development</h6>
+          </div>
+          <div class="card down">
+            <img class="image" src=" ../assets/img/shutterstock_796346011@2x.png" alt="" />
+            <div class="kotak orange-border"></div>
+            <h5 class="name">Aulia Rahmani</h5>
+            <h6 class="position-name">UI UX Designer</h6>
+          </div>
+        </div>
+        <div class="check">
+          <div class="arrow"></div>
+          <a class="" href="../pages/team.html">Check Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Latest Blogs -->
+    <div class="container-responsive mb-36">
+      <!-- judul halaman -->
+      <h1 class="text-[#19345E] text-5xl font-bold text-center md:text-7xl lg:flex lg:items-center lg:justify-center">
+        <div class="garis"></div>
+        Latest Blogs
+        <div class="garis2"></div>
+      </h1>
+      <div class="md:flex md:flex-wrap md:justify-around">
+        <div class="w-[343px] mt-16 p-2 mx-auto md:mx-0">
+          <!-- foto artikel -->
+          <img class="rounded" src="../assets/img/img_article.jpg" alt="" />
+          <!-- judul artikel -->
+          <div class="text-[#19345E] font-roboto font-bold text-2xl mt-8">
+            <h4>CREATE A WORDPRESS</h4>
+            <h4>THEME FROM SCRATCH</h4>
+          </div>
+          <!-- nama dan tanggal -->
+          <div class="flex justify-between font-poppins text-[#707070] text-lg mt-3">
+            <p>Larry Stark</p>
+            <p>7 Januari 2020</p>
+          </div>
+          <!-- isi paragraf -->
+          <div class="text-[#19345E] font-poppins mt-4 font-normal">
+            <p>
+              Quick six blind smart out burst. Perfectly on furniture
+              dejection determine my depending an to. Add short water court
+              fat…
+            </p>
+          </div>
+          <div class="text-right font-poppins mt-4">
+            <a class="text-[#19345E] font-poppins font-normal transition hover:text-[#F47522] duration-200 underline"
+              href="">Read More</a>
+          </div>
+        </div>
+        <div class="w-[343px] mt-16 p-2 mx-auto md:mx-0">
+          <!-- foto artikel -->
+          <img class="rounded" src="../assets/img/img_article.jpg" alt="" />
+          <!-- judul artikel -->
+          <div class="text-[#19345E] font-roboto font-bold text-2xl mt-8">
+            <h4>CREATE A WORDPRESS</h4>
+            <h4>THEME FROM SCRATCH</h4>
+          </div>
+          <!-- nama dan tanggal -->
+          <div class="flex justify-between font-poppins text-[#707070] text-lg mt-3">
+            <p>Larry Stark</p>
+            <p>7 Januari 2020</p>
+          </div>
+          <!-- isi paragraf -->
+          <div class="text-[#19345E] font-poppins mt-4 font-normal">
+            <p>
+              Quick six blind smart out burst. Perfectly on furniture
+              dejection determine my depending an to. Add short water court
+              fat…
+            </p>
+          </div>
+          <div class="text-right font-poppins mt-4">
+            <a class="text-[#19345E] font-poppins font-normal transition hover:text-[#F47522] duration-200 underline"
+              href="">Read More</a>
+          </div>
+        </div>
+        <div class="w-[343px] mt-16 p-2 mx-auto md:mx-0">
+          <!-- foto artikel -->
+          <img class="rounded" src="../assets/img/img_article.jpg" alt="" />
+          <!-- judul artikel -->
+          <div class="text-[#19345E] font-roboto font-bold text-2xl mt-8">
+            <h4>CREATE A WORDPRESS</h4>
+            <h4>THEME FROM SCRATCH</h4>
+          </div>
+          <!-- nama dan tanggal -->
+          <div class="flex justify-between font-poppins text-[#707070] text-lg mt-3">
+            <p>Larry Stark</p>
+            <p>7 Januari 2020</p>
+          </div>
+          <!-- isi paragraf -->
+          <div class="text-[#19345E] font-poppins mt-4 font-normal">
+            <p>
+              Quick six blind smart out burst. Perfectly on furniture
+              dejection determine my depending an to. Add short water court
+              fat…
+            </p>
+          </div>
+          <div class="text-right font-poppins mt-4">
+            <a class="text-[#19345E] font-poppins font-normal transition hover:text-[#F47522] duration-200 underline"
+              href="">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer class="bg-[#19345E]">
+    <div class="footer-responsive container-responsive">
+      <!-- logo website -->
+      <div class="logo-alta">
+        <img src="../assets/img/logo-ALTA-v2@2x.png" alt="" />
+      </div>
+      <div class="">
+        <h5 class="sosmed-text">Social Media</h5>
+        <!-- logo icon sosmed -->
+        <div class="icon-sosmed">
+          <img class="icon" src="../assets/img/ic_fb.png" alt="" />
+          <img class="icon" src="../assets/img/ic_twitter.png" alt="" />
+          <img class="icon" src="../assets/img/ic_ig.png" alt="" />
+          <img class="icon" src="../assets/img/ic_linkedin.png" alt="" />
+        </div>
+      </div>
+      <!-- copyright -->
+      <div class="copyright">
+        <h1>Copyright © 2019 Alterra</h1>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "tailwindcss": "^3.1.3"
+  },
+  "name": "groupproject-rizalvian",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALTA-FE7-RizalVian/GroupProject-RizalVian.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ALTA-FE7-RizalVian/GroupProject-RizalVian/issues"
+  },
+  "homepage": "https://github.com/ALTA-FE7-RizalVian/GroupProject-RizalVian#readme",
+  "description": ""
+}
